@@ -1,0 +1,79 @@
+---
+title: Nicholas Hugh Sam
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body{
+        margin:40px auto;
+        max-width:650px;
+        line-height:1.4;
+        font-size:18px;
+        color:#363636;
+        padding:0 10px;
+        font-family: Montserrat, sans-serif;
+    }
+    a {
+      color: #2374AB;
+    }
+    .blog-link {
+      padding: 5px 0;
+    }
+    h1,h2,h3{
+        line-height:1.2
+    }
+    .underline {
+        text-decoration: underline;
+    }
+    nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    }
+    .nav-left a{
+      margin-left: 20px;
+    }
+    </style>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <nav>
+        <div class="nav-right">
+              <a 
+                {% if page.url == "/" %}
+                class="underline"
+                {% else %}
+                class=""
+                {% endif %} href="/">back to homepage</a>
+        </div>
+        <div class="nav-left">
+              <a 
+                {% if page.url == "/about/" %}
+                class="underline"
+                {% else %}
+                class=""
+                {% endif %}
+              href="/about">about</a>
+              <a 
+                {% if page.url == "/archive/" %}
+                class="underline"
+                {% else %}
+                class=""
+                {% endif %}
+              href="/archives">archives</a>
+          </div>
+        </div>
+    </nav>
+
+    <h1>{{ title }}</h1>
+
+	  {{ content }}
+
+  </body>
+</html>

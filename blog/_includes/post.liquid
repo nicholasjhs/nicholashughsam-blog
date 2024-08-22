@@ -1,0 +1,22 @@
+---
+layout: main
+---
+
+<p>
+	<strong>Posted: </strong> {{ date | niceDate }}<br/>
+</p>
+
+{{ content }}
+
+{% assign previousPost = collections.posts | getPreviousCollectionItem %}
+{% assign nextPost = collections.posts | getNextCollectionItem %}
+
+<p>
+{% if previousPost %}
+<a href=" {{ previousPost.url }}">&lt&lt {{ previousPost.data.title }}</a>
+{% endif %} 
+/ 
+{% if nextPost %}
+<a href=" {{ nextPost.url }}">{{ nextPost.data.title }} &gt&gt</a>
+{% endif %}
+</p>

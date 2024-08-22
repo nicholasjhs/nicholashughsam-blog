@@ -1,0 +1,35 @@
+---
+title: Hi, I'm Nicholas.
+layout: main
+pagination:
+  data: collections.posts
+  size: 10
+  alias: posts
+  reverse: true
+---
+<p>I write about my thoughts here.</p>
+<p>I'm obsessed with knowing how you and I and everyone else can live happier and more authentic lives.</p>
+
+<div class="blog-lists">
+<h3>My latest entries:</h3>
+{% for post in posts %}
+<div class=blog-link>
+<a href="{{post.url}}">{{ post.data.title }}</a>
+</div>
+<hr>
+{% endfor %}
+</div>
+
+<p>
+{% if pagination.href.previous %}
+<a href=" {{ pagination.href.previous }}">Previous</a>
+{% else %}
+Previous
+{% endif %} 
+/ 
+{% if pagination.href.next %}
+<a href=" {{ pagination.href.next }}">Next</a>
+{% else %}
+Next
+{% endif %}
+</p>
