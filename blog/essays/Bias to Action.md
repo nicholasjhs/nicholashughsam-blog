@@ -4,8 +4,6 @@ categories: ["essay"]
 tags: essays
 
 ---
-## Bias to Action
-
 If you want to drastically change your life, the one thing you need to think about is bias to action.
 
 What is bias to action? It simply means to take action instead of thinking.
@@ -108,9 +106,3 @@ Try staying at the job and see how that feels. If it feels bad, then quit.
 So that is it, this is essentially the one thing that I **know** will drastically improve all areas of your life.
 
 Believe me, I'm smart.
-
-
-
-
-
-

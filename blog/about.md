@@ -1,6 +1,7 @@
 ---
 title: About
 layout: main
+eleventyExcludeFromCollections: true
 ---
 
 Here are a few sentences that I connect with:
