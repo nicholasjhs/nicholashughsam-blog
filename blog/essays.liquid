@@ -1,16 +1,16 @@
 ---
-title: Archives
+title: Essays
 layout: main
 pagination:
-  data: collections.posts
-  size: 30
-  alias: posts
+  data: collections.essays
+  size: 10
+  alias: essays
   reverse: true
 ---
-<p>A collection of all my writings in one place (daily + long form posts)</p>
-{% for post in posts %}
+<p>A collection of my daily essays</p>
+{% for essay in essays %}
 <div class=blog-link>
-<a href="{{post.url}}">{{ post.data.title }}</a>
+<a href="{{essay.url}}">{{ essay.data.title }}</a>
 </div>
 <hr>
 {% endfor %}

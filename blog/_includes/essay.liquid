@@ -1,0 +1,18 @@
+---
+layout: main
+---
+
+{{ content }}
+
+{% assign previousEssay = collections.essays | getPreviousCollectionItem %}
+{% assign nextEssay = collections.essays | getNextCollectionItem %}
+
+<p>
+{% if previousEssay %}
+<a href=" {{ previousEssay.url }}">&lt&lt {{ previousEssay.data.title }}</a>
+{% endif %} 
+/ 
+{% if nextEssay %}
+<a href=" {{ nextEssay.url }}">{{ nextEssay.data.title }} &gt&gt</a>
+{% endif %}
+</p>

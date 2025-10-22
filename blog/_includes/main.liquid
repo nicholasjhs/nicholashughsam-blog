@@ -61,12 +61,19 @@ title: Nicholas Hugh Sam
                 {% endif %}
               href="/about">about</a>
               <a 
-                {% if page.url == "/archive/" %}
+                {% if page.url == "/essays/" %}
                 class="underline"
                 {% else %}
                 class=""
                 {% endif %}
-              href="/archives">archives</a>
+              href="/essays">essays</a>
+              <a 
+                {% if page.url == "/daily/" %}
+                class="underline"
+                {% else %}
+                class=""
+                {% endif %}
+              href="/daily">daily</a>
           </div>
         </div>
     </nav>
