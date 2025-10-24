@@ -1,7 +1,7 @@
 ﻿---
 title: Bias to Action
 categories: ["essay"]
-permalink: /{{ title | slugify }}/
+permalink: /essays/{{ title | slugify }}/
 tags: essays
 
 ---

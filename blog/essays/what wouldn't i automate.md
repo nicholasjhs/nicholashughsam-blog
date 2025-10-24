@@ -1,7 +1,7 @@
 ﻿---
 title: a useful question to help you find what you love (and don't)
 categories: ["essay"]
-permalink: /{{ title | slugify }}/
+permalink: /essays/{{ title | slugify }}/
 tags: essays
 
 ---
